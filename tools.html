@@ -1,0 +1,1 @@
+<h2>Tools Register</h2><form method='POST'>Tool ID:<input name='tool_id'><br>Name:<input name='name'><br>Quantity:<input name='quantity' type='number'><br>Reorder Level:<input name='reorder_level' type='number'><br><button>Add Tool</button></form><ul>{% for t in tools %}<li>{{ t.tool_id }} - {{ t.name }} | Qty: {{ t.quantity }}</li>{% endfor %}</ul><a href='/'>Back</a>
