@@ -1,0 +1,1 @@
+<h2>Issue Log</h2><form method='POST'>Tool ID:<input name='tool_id'><br>Technician:<input name='technician'><br>Due Date:<input name='due_date' type='date'><br><button>Issue Tool</button></form><ul>{% for i in issues %}<li>{{ i.tool_id }} - {{ i.technician }} - {{ i.due_date }} - Returned: {{ i.returned }}</li>{% endfor %}</ul><a href='/'>Back</a>
