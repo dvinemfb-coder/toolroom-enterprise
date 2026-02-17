@@ -1,0 +1,1 @@
+<h2>Technicians Register</h2><form method='POST'>Name:<input name='name'><br>Contact:<input name='contact'><br><button>Add Technician</button></form><ul>{% for t in technicians %}<li>{{ t.name }} - {{ t.contact }}</li>{% endfor %}</ul><a href='/'>Back</a>
